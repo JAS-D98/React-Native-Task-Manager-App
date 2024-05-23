@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import Colors from '../Utils/Colors';
 
 export default function Task(props) {
   return (
@@ -17,7 +18,7 @@ export default function Task(props) {
 
 const styles = StyleSheet.create({
     item: {
-        backgroundColor:'#fff',
+        backgroundColor:Colors.PRIMARY_COLOR,
         padding:15,
         borderRadius: 10,
         flexDirection:'row',
@@ -33,23 +34,16 @@ const styles = StyleSheet.create({
     square: {
         width:24,
         height:24,
-        backgroundColor:'#558CF6',
+        backgroundColor:Colors.TERTIARY_COLOR,
         opacity: 0.4,
         borderRadius:5,
         marginRight:15,
     },
     boxWithShadow: {
-        shadowColor: '#000',
+        shadowColor:Colors.DEFAULT_COLOR,
         shadowOffset: { width: 0, height: 1 },
         shadowOpacity: 0.8,
         shadowRadius: 2,  
         elevation: 5
     }
-    // circular: {
-    //     width:12,
-    //     height:12,
-    //     borderColor:'#558CF6',
-    //     borderWidth:2,
-    //     borderRadius:5,
-    // },
 })
